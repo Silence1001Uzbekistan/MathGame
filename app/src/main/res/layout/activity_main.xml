@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mathg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_misol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Math Game"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent="0.6"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/rad_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_misol"
+        app:layout_constraintVertical_bias="0.15"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/rad_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A javob"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/rad_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B javob"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/rad_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C javob"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/rad_D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D javob"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_reshot_icon_analyze_check_79z6v2b5ce"
+        android:fontFamily="casual"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintTop_toBottomOf="@id/rad_group"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <ImageButton
+        android:id="@+id/refreshB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_refresh_svgrepo_com"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintWidth_percent="0.15"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
